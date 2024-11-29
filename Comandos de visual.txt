@@ -1,0 +1,6 @@
+Comandos de visual 
+
+alt+39 = Para agregar comillas sencillas
+ctrl+s = Para guardar cambios
+alt+91 = Para abrir y cerrar corchetes []
+alt+123 = Para abrir y cerrar llaves {}

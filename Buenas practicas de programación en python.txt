@@ -1,0 +1,134 @@
+Definición de variables.
+-Para escribir variables en python se deben estableces estas reglas:
+-Usar nombres que revelen intenciones.
+-Usar nombres descriptivos.
+-Las variables deben ayudar a identificar cual es su uso.
+-si la variable tiene valor booleano, escribela como una pregunta. ejm: 'is'.
+-si la variable contiene números, usa palabras que acompañen las cantidades.
+-Para las variables de tipo enteras, debes usar IN. ejm: 'INumero'.
+-Para las variables de tipo flotantes, debes usar F. ejm: 'FNumero'.
+-Para las variables de tipo string, debes usar S. ejm: 'SNumero'.
+
+
+Identificadores a nombres de variables:
+-Se forman por letras, numeros y guiones bajos '_'.
+-No deben tener espacios.
+-No pueden tomar el nombre de palabras reservadas en python.
+-No puedentener caracteres especiales las variables.
+
+
+Estructura condicional:
+
+#Condicional if:
+
+if <condición>:
+   <sentencias>
+   ...
+
+Si (if) se cumple la <condición>:
+        Ejecuta las siguientes sentencias <sentencias>
+        ...
+
+Ejm:
+
+password == 'ABC123'
+
+if password == 'ABC123'
+    print('la clave es correcta')
+
+#Condicional if y else:
+
+if <condición>:
+   <sentencias>
+else:
+   <sentencia>
+
+Si (if) se cumple la <condición>:
+        Ejecuta las siguientes <sentencias>
+si no (else) se cumple la <condición>:
+        Ejecuta estas <sentencias>
+
+Ejm:
+
+if password == 'ABC123'
+    print('la clave es correcta')
+else:
+    print('la clave es incorrecta')
+
+#Condicional if elif 
+
+if <condición>:
+   <sentencias>
+elif <condición>:
+   <sentencia>
+
+Si (if) se cumple la <condición>:
+        Ejecuta las siguientes <sentencias>
+si no (elif) se cumple esta <condición>:
+        Ejecuta estas <sentencias>
+
+Ejm:
+
+password = 'root'
+usuario = 'admin'
+
+if usuario == 'admin' and password == 'root'
+    print('usuario correcto / clave correcta')
+elif usuario == 'admin' and password != 'root':
+    print('usuario correcto / clave incorrecta')
+
+#While
+
+while <condición>:
+   <sentencias>
+   ...
+
+Mientras (while) se cumpla esta <condición>:
+         Ejecuta las siguientes <sentencias>
+         ...
+#Ejm:
+multiplicando = 11
+multiplicador = 1
+producto = 0
+
+while multiplicador <= 10:
+      producto = multiplicando * multiplicador
+      print (f'{multiplicador} = {producto}
+      multiplicador = multiplicador + 1 
+
+#for
+
+for <elemento> in <colección>:
+    <sentencias>
+    ...
+
+Para cada (for) <elemento> en (in) la <coleccion>:
+          Ejecuta las siguientes <sentencias>
+          ...
+
+#ejm
+
+nombres = ['juan', 'antonio', 'pedro', 'herminio']
+
+for nombre in nombres:
+    print(nombre)
+
+#for-in-rage
+
+for <elemento> in <rango>:
+    <sentencias>
+    ...
+
+Para cada (for) <elemento> en (in) este <rango>:
+          Ejecuta las siguientes <sentencias>
+          ...
+
+#Ejm:
+
+base = int(input('> Intriduce el número a elevar:'))
+
+for exponente in range (0,10):
+    potencia = base ** exponente
+    print(f'{base} elevado a {exponente} es {potencia}')
+
+ 
