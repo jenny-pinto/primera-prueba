@@ -695,5 +695,535 @@ base = int(input('> Intriduce el número a elevar:'))
 for exponente in range (0,10):
     potencia = base ** exponente
     print(f'{base} elevado a {exponente} es {potencia}')
+
+#Caractertes Especiales
+#Es un salto de linea
+print('Hola \nMundo') 
+
+#Es un tabulador
+print('\t Python \t es genial')
+
+#Comillas simples
+print('Jenny\' "pinto')
+
+#Comillas dobles
+print("'Tatiana' \"Pinto")
+
+#Diagonal invertida
+print('Hola \\ jenny')
+
+#Concatenación de cadenas
+#Utilizando +
+cadena1 = 'Hola'
+cadena2 = 'Mundo'
+concatenacion = cadena1 + ' ' + cadena2
+
+print(concatenacion)
+
+#Utilizando .join
+concatenacion = ''.join([cadena1, ' ', cadena2])
+print(concatenacion)
+
+#Formateo de cadenas
+nombre = 'Jenny'
+edad = 21
+
+#f-string
+mensaje =f'Hola, me llamo {nombre} y tengo {edad} años.'
+print(mensaje)
+
+#metodo format
+mensaje ='Hola, me llamo {} y tengo {} años.'.format(nombre, edad)
+print(mensaje)
+
+#Metodos de cadenas
+
+cadena1 = 'Hola Mundo'
+print(f'Cadena original: {cadena1}')
+
+#Poner la cadena en MAYUSCULAS
+MAYUSCULAS = cadena1.upper()
+print(f'Cadena en mayúsculas: {MAYUSCULAS}')
+
+#Poner la cadena en minusculas
+minusculas =cadena1.lower()
+print(f'Cadena en minusculas: {minusculas}')
+
+#Para imprimir directamente la cadena sin asignar una variable
+print(f'Cadena en nimúsculas: {cadena1.lower()}')
+
+cadena2 = ' Jenny Pinto '
+print(f'Cadena con espacios: {cadena2}')
+#Eliminar espacios
+print(f'Cadena sin espacios: {cadena2.strip()}')
+
+#Largo de la cadena
+cadena ='Hola, Mundo!'
+largo_cadena = len(cadena)
+print(f'Cadena original: {cadena}')
+print(f'Largo de la cadena: {largo_cadena}')
+
+#Manejo de Subcadenas
+cadena = 'Hola, Mundo!'
+#Obtenemos la subcadena de Hola [inicio:fin (sin incluirlo)]
+subcadena_hola = cadena[0:4]
+print(f'Subcadena de Hola: {subcadena_hola}')
+subcadena_mundo = cadena[6:11]
+print(f'Subcadena de Mundo: {subcadena_mundo}')
+
+#Buscar subcadenas
+cadena = 'Hola, mundo!'
+indice = cadena.find('mundo')
+print(f'Indice de la subcadena mundo: {indice}')
+
+#Obtener el indice de la subcadena de Hola
+indice = cadena.find('Hola')
+print(f'Indice de la subcadena de Hola {indice}')
+
+#Reemplazar subcadenas
+cadena = 'Hola, mundo!'
+print(f'Cadena Original: {cadena}')
+nueva_cadena = cadena.replace('mundo', 'a todos')
+print(f'Nueva cadena reemplazada: {nueva_cadena}')
+
+#Substituir Hola por adios
+nueva_cadena = cadena.replace('Hola', 'Adios')
+print(f'Nueva cadena reemplazada: {nueva_cadena}')
+
+#Separar subcadenas
+#Para separar cada elemento por espacios en blanco
+datos = 'Hola mundo'
+lista = datos.split() 
+print(lista)
+
+#Para separar cadenas por cada ,
+datos = 'Jenny,21,Colombia'
+lista = datos.split(',')
+print(lista)
+
+#Multiplicación de cadenas
+texto = 'Hola'
+veces = 5
+resultado = texto * veces
+print(resultado)
+
+#Conversion de tipos de datos
+#Convertir de cadena a número
+numero_cadena = '10'
+numero_entero = int(numero_cadena)
+print(f'Valor numerico en cadena: {numero_cadena}')
+print(f'Cadena a entero: {numero_entero}')
+
+#Convertir de cadena a flotante
+numero_cadena = '3.14'
+numero_flotante = float(numero_cadena)
+print(f'Cadena a flotante: {numero_flotante}')
+
+#Convertir de número a cadena
+numero_entero = 25
+numero_cadena = str(numero_entero)
+print(f'Número a cadena: {numero_cadena}')
+
+#Convertir a booleano
+#Tipo bool es False en los siguientes casos:
+#Si el valor es 0, cadena vacia, o None, entonces regresa False
+#Regresa True, si el valor es distinto de 0, si es distinto de cadena vacia y tambien si es distinto de None
+numero_entero = 0
+booleano = bool(numero_entero)
+print(f'Valor booleano de 0: {booleano}') #False, incluye 0, 0.0
+
+numero_entero = 5
+booleano = bool(numero_entero)
+print(f'Valor booleano de 5: {booleano}') #True, incluye 0, 0.0
+
+cadena = '' #El largo de la cadena es 0
+booleano = bool(cadena)
+print(f'Valor booleano de cadena vacia: {booleano}') #False, incluye condiciones vacias
+
+cadena = 'Cadena con valor'
+booleano = bool(cadena)
+print(f'Valor booleano de cadena NO vacia: {booleano}') #True
+
+variable = None
+booleano = bool(variable)
+print(f'Valor booleano de None: {booleano}') #False
+
+#Ejm Tipos de datos
+#Ejm de concatenación o suma de valores
+numero1_cadena = '10'
+print(f'Número 1 en cadena: {numero1_cadena}')
+numero2_cadena = '20'
+print(f'Número 2 en cadena: {numero2_cadena}')
+resultado = numero1_cadena + numero2_cadena
+print(f'Concatenacion: {resultado}')
+
+#Convertimos a tipos enteros
+numero1_entero = int(numero1_cadena)
+numero2_entero = int(numero2_cadena)
+resultado = numero1_entero + numero2_entero
+print(resultado)
+
+#Entrada de datos:
+nombre = input('Ingrese un nombre: ')
+print(f'Recibiendo el valor de nombre: {nombre}')
+
+#Convertir la cadena a tipo entero.
+edad = int(input('Introsuce tu edad: '))
+print(f'Tu edad es: {edad} y en un año tendras {edad + 1}')
 """
- 
+#Valores aleatorios con la función randint
+""" 
+Forma 1:
+import random
+numero = random.randint(a,b)
+
+#Forma 2:
+from random import randint
+
+#Generar un número aleatorio entre 1 y 10
+numero = randint(1, 10)
+print(f'Número aleatorio entre 1 y 10: {numero}')
+
+#Operadores Aritmeticos
+a = 10
+b = 3
+
+suma = a + b
+print(f'Suma: {suma}')
+
+resta = a - b 
+print(f'Resta: {resta}')
+
+multiplicacion = a * b
+print(f'Multiplicación: {multiplicacion}')
+
+division = a / b 
+print(f'División: {division:.2f}')
+
+division_entera = a // b
+print(f'División Entera: {division_entera}')
+
+modulo = a % b
+print(f'Residuo de la división: {modulo}')
+
+exponente = a ** b 
+print(f'Exponente: {exponente}')
+
+#Operadores de asignación
+
+numero = 5
+print(f'Valor de número: {numero}')
+cadena = 'Saludos desde python'
+print(f'Valor de la cadena: {cadena}')
+
+#Asignación multiple
+a, b, c = 10, 'Saludos', 14.5
+print(f'Valor de a = {a}, b = {b}, c = {c}')
+x, y, z = 5, 'Hola', -9.15
+print(f'Valor de x = {x}, y = {y}, z = {z}')
+
+#Asignación Encadenada
+contador1 = contador2 = 0
+print(f'Valor de contador1 = {contador1}, contador2 = {contador2}')
+a = b = c = 10
+print(f'Valor de a = {a}, b = {b}, c = {c}')
+
+#Intercambio de valores de una variable, sin utilizar temporales
+x, y = 5, 10
+print(f'Valores iniciales de x = {x}, y = {y}')
+#Aplicando el concepto de asignación multiple, intercambiamos valores
+x, y = y, x
+print(f'Valores iniciales de x = {x}, y = {y}')
+#Resibir multiples valores de la entrada del usuario
+nombre, apellido = input('Ingresa tu nombre y apellido separados por coma: ').split(',')
+print(f'nombre: {nombre.strip()}, apellido: {apellido.strip()}')
+
+#Operadores compuestos
+a, b = 10, 15
+print(f'Valor inicial a : {a}, b : {b}')
+
+a += b # a = a + b
+print(f'Operador a += b es: {a}')
+
+a = 10 #Reiniciamos la variable a
+a -= b # a = a - b
+print(f'Operador a -= b es: {a}')
+
+a = 10
+a *= b # a = a * b
+print(f'Operador a *= b es: {a}')
+
+a = 10
+a /= b # a = a / b
+print(f'Operador a /= b es: {a:.2f}')
+
+#Operadores de comparación o relacionales
+a, b = 7, 5 
+print(f'Valor inicial a: {a}, b: {b}')
+
+resultado = a == b
+print(f'Resultado a == b es: {resultado}')
+
+resultado = a != b
+print(f'Resultado a != b es: {resultado}')
+
+resultado = a > b
+print(f'Resultado a > b es: {resultado}')
+
+resultado = a >= b
+print(f'Resultado a >= b es: {resultado}')
+
+resultado = a < b 
+print(f'Resultado a < b es: {resultado}')
+
+resultado = a <= b 
+print(f'Resultado a <= b es: {resultado}')
+
+#Operador and (reguesa verdadero si ambos valores son verdaderos)
+condicion1 = False
+condicion2 = False
+resultado = condicion1 and condicion2
+print(f'Resultado {condicion1} and {condicion2}: {resultado}')
+
+condicion1 = True
+condicion2 = True
+resultado = condicion1 and condicion2
+print(f'Resultado {condicion1} and {condicion2}: {resultado}')
+
+#Operador lógico or (regresa True si cualquiera de los operandos es verdadero)
+condicion1 = False
+condicion2 = False
+resultado = condicion1 or condicion2
+print(f'Resultado {condicion1} or {condicion2} es: {resultado}')
+
+condicion1 = False
+condicion2 = True
+resultado = condicion1 or condicion2
+print(f'Resultado {condicion1} or {condicion2} es: {resultado}')
+
+condicion1 = True
+condicion2 = True
+resultado = condicion1 or condicion2
+print(f'Resultado {condicion1} or {condicion2} es: {resultado}')
+
+#Operador not 
+condicion1 = False
+resultado = not condicion1
+print(f'Operador not sobre {condicion1}: {resultado}')
+
+#Revisar si una variable es cadena vacia
+nombre = ''
+es_cadena_vacia = not nombre
+print(f'\n¿La variable no tiene ningún valor?: {es_cadena_vacia}')
+
+#Revisar si unna variable no tiene ningún valor asignado
+variable = None
+es_variable_sin_valor = not variable
+print(f'\n¿La variable no tiene nungún valor asignado?: {es_variable_sin_valor}')
+
+#Ejm:
+#Revisar si una variable se encuentra dentro de rango entre 1 y 10
+dato = int(input('Proporciona un dato entero: '))
+
+#Revisamos si está dentro de rango 
+esta_dentro_rango = 1 <= dato <= 10
+print(f'Variable está dentro de rango (entre 1 y 10)? : {esta_dentro_rango}')
+
+#Revisamos la lógica inversa, si el dato está fuera de rango
+esta_fuera_rango = not(1 <= dato <= 10)
+print(f'¿Variable está fuera de rango (entre 1 y 10)?: {esta_fuera_rango}')
+
+#Presedencia de operadores
+# 1. Paréntesis (): Los paréntesis tienen la mayor precedencia
+# 2. Exponente **: Este operador calcula la potencia de un número.
+# 3. Unario +, -: Estos operadores realizan operaciones unarias de positivo y negativo
+# 4. Multiplicación *, División /, División entera //, Módulo %
+# 5. Suma +, Resta -: Estos operadores realizan operaciones aritméticas.
+# 6. Comparaciones (==, !=, >, <, >=, <=)
+# 7. Operadores lógicos not, and, or
+# 8. Asignación (=, +=, -=, *=, /=, entre otros)
+
+# Ejemplo de precedencia de operadores
+# 1. Division 12 / 3 = 4
+# 2. Multiplicacion 2 * 3 = 6
+# 3. Suma 4 + 6 = 10
+# 4. Resta 10 - 1 = 9
+
+resultado = 12 // 3 + 2 * 3 - 1
+print(f'Resultado: {resultado}')
+
+#Sentencias de Desición
+#Sentencia if
+print('*** Sentencia if ***')
+edad = 30
+if edad >= 18:
+    print(f'Eres mayor de edad. Tienes {edad} años')
+
+#Sentencia if else
+print('*** Sentencia if else ***')
+edad = 10
+if edad >= 18:
+    print(f'Eres mayor de edad. Tienes {edad} años')
+else:
+    print(f'Eres menor de edad. Tienes {edad} años')
+
+#Sentencia if elif else
+print('*** Sentencia elif ***')
+edad = 16
+if edad >= 18:
+    print(f'Eres mayor de edad. Tienes {edad} años.')
+elif 13 <= edad < 18:
+    print(f'Eres un adolescente. Tienes {edad} años.')
+else:
+    print(f'Eres un menor de edad. Tienes {edad} años.')
+
+#Ejm usando not
+print('*** Bienvenidos al Sistema Bancario ***')
+
+salir_sistema_txt = input('¿Deseas salir del sistema? (Si/No):')
+salir_sistema = salir_sistema_txt.strip().lower() == 'si'
+
+if not salir_sistema:
+    print('Continuamos dentro del sistema.')
+else:
+    print('Salimos del sistema.')
+
+#Operador Termario
+edad = int(input('Ingresa tu edad: '))
+es_adulto = 'si' if edad >= 18 else 'no'
+print(f'¿Es adulto?: {es_adulto}')
+
+#Ciclo while
+print('*** Ciclo while ***')
+#Imprimir los numeros del 1 al 5
+contador = 1
+while contador <= 5:
+    print(contador,end=' ') #end es para que impriman en la misma linea
+    contador += 1 #contador = contador + 1
+
+#Ciclo not while
+print('*** Validación campo de un formulario ***')
+nombre_usuario = None
+
+while not nombre_usuario:
+    nombre_usuario = input('Ingresa tu nombre: ')
+print(f'Nombre de usuario válido: {nombre_usuario}')
+
+#Ciclo en for
+print('*** Ciclo for ***')
+cadena = 'Hola Mundo'
+for letra in cadena:
+    print(letra, end=' ')
+
+#Lista
+print('\nRecorremos una lista')
+frutas = ['manzana', 'pera', 'mango']
+for fruta in frutas:
+    print(fruta, end=' ')
+
+#Función range
+print('Función range')
+print('Secuencia de 0 al 4:')
+#inicio = 0 (opcional)
+#fin = 5 - 1 = 4
+#incremento = (opcional)
+for i in range(5): #fin = 5 - 1
+    print(i, end=' ')
+
+#secuencia del 1 al 20
+print('Secuencia del 1 al 20')
+#incremento = 1 (default del 10 al 20)
+for i in range(10, 21):
+    print(i, end=' ')
+
+#Secuencia del 20 al 30 de 2 en 2
+print('\n\nSecuencia del 20 al 30 de 2 en 2')
+for i in range(20, 31, 2):
+    print(i, end=' ')
+
+-#Imprimir un mensaje 
+print('*** Repetición de un Mensaje ***')
+mensaje = input('Proporciona un mensaje a repetir: ')
+num_repeticiones = int(input('Proporciona el número de repeticiones: '))
+#Iterar sobre el rango de repeticiones
+for i in range(num_repeticiones):
+    print(mensaje)#Muestra el mensaje impreso toda la cantidad de veces
+    print(f'{i} - {mensaje}')#Para que aparezcan las veces que se van a repetir - 1 de la cantidad dada
+    print(f'{i+1} - {mensaje}')#Para que aparezca toda la cantidad
+
+#Break y continue
+print('Palabra Break:')
+for numero in range (1, 10):
+    if numero % 2 == 0: #numero par
+        print(numero)
+        break #Salimos del  ciclo inmediatamente
+
+#Ejm:continue
+print('Palabra continue:')
+for numero in range(1, 10):
+    if numero % 2 == 1: #numero impar
+        continue
+    print(numero) #números pares
+
+#Listas
+print('*** Manejo de Listas ***')
+mi_lista = [1, 2, 3, 4, 5]
+print(f'{mi_lista} -> Lista Original')
+#Largo de la lista
+print(f'Largo de la lista {len(mi_lista)}')
+#Acceder a los elementos de la lista por indice
+print(f'Accedemos al valor del indice 4: {mi_lista[4]}')
+print(f'Accedemos al ultimo indice de la lista: {mi_lista[-4]}')
+#Modificar elemntos de una lista
+mi_lista[1] = 10
+print(f'Modificamos el valor del indice 1 : {mi_lista [1]}')
+#Agregar un elemento al final de la lista
+mi_lista.append(6)
+print(f'{mi_lista} -> Se agregó el elemento 6')
+#Añadir un nuevo elemento en un indice especifico
+mi_lista.insert(2, 15)
+print(f'{mi_lista} -> Se añadió el valor de 15 en el indice 2')
+#Eliminar elementos de una lista
+#Usando el metodo remove
+mi_lista.remove(5)
+print(f'{mi_lista} -> Se remoció el valor 5')
+#Removemos por indice con el metodo pop
+mi_lista.pop(1) #Remueve el elemento del indice 1
+print(f'{mi_lista} -> Se eliminó el índice 1')
+#Eliminar elementos utilizando la palabra del
+del mi_lista[2]
+print(f'{mi_lista} -> Se eliminó el indice 2')
+
+#Obtener una sublista 
+sublista = mi_lista[1:3] #Genera una sublista del indice 1 al 2 (3 no se incluye)
+print(f'Sublista [1:3]: {sublista}')
+
+#Iterar una lista
+print('Iterar Listas')
+nombres = ['Karla', 'Juan', 'Laura']
+for nombre in nombres:
+    print(nombre)
+
+lista_heterogenea = [100, True, 'Ivonne']
+for elemento in lista_heterogenea:
+    print(elemento)
+"""
+#Lista de Reproducción
+print('*** Playlist de Canciones ***')
+#Creamos la lista vacia
+lista_reproduccion = []
+#Empezamos a agregar canciones
+lista_reproduccion.append('Luna Roja - Rupatrupa')
+lista_reproduccion.append('El tiempo - Jósean Log')
+lista_reproduccion.append('En otra vida - Yami Safdie, Lapso')
+#Ordenar la lista en orden alfabetico .sort
+lista_reproduccion.sort() #Manera ascendente
+lista_reproduccion.sort(reverse=True) #Manera descendente
+#Mostrar la lista de canciones
+print(f'\nLista de reproducción en orden alfabetico: {lista_reproduccion}')
+#Mostrar la lista iterando sus elementos
+print('\nIteramos el Playlist')
+for cancion in lista_reproduccion:
+    print(f'-{cancion}')
+
+
