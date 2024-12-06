@@ -1,0 +1,26 @@
+Observaciones:
+no leer la presentación 
+
+requerimientos no fncionales, deben estar dados a una medición.
+cantidad de la concurrencia de usuarios, como se va a hacer que el sistema sea de 
+
+
+diagrama de arquitectura, se debe plasmar como van a ser las comunicaciones, donde estan arerrisados los docker ubicados
+se debe especificar bien el diagrama. 
+como se va a hacer la autenticación.
+
+solucioon general, de forma grafica como se soluciona el problema
+
+
+en los entregables incluir el objetivo del proyecto para nosotros.
+
+
+
+Objetivo:
+Desarrollar un sistema que permita gestionar la productibidad de los usuarios en los repositorios de github, por medio de una api que extraiga la información 
+de github y la muestre en kibana por medio de dashboard. 
+
+
+
+
+
